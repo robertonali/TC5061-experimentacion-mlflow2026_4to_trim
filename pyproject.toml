@@ -1,0 +1,45 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "semana_3_refactored_code"
+version = "0.0.1"
+description = "Refactorization of notebook into clear, actionable, understandable and usable code."
+authors = [
+  { name = "Roberto Najera" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.13.0"
+# Rangos compatibles; las versiones exactas de las corridas están en requirements.txt
+dependencies = [
+    "loguru>=0.7",
+    "matplotlib>=3.10",
+    "mlflow>=3.0",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "python-dotenv>=1.0",
+    "scikit-learn>=1.6",
+    "skops>=0.10",
+    "tqdm>=4.66",
+    "typer>=0.12",
+]
+
+
+[tool.ruff]
+line-length = 99
+src = ["semana_3_refactored_code"]
+include = ["pyproject.toml", "semana_3_refactored_code/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["semana_3_refactored_code"]
+force-sort-within-sections = true
+

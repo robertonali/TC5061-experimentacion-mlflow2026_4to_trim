@@ -1,0 +1,28 @@
+# Versiones exactas con las que se ejecutaron las corridas (Python 3.13)
+
+# Datos y modelo
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+
+# Seguimiento de experimentos (skops: formato con el que MLflow 3 guarda modelos de sklearn)
+mlflow==3.16.0
+skops==0.14.0
+
+# Gráficas
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# Utilidades del proyecto
+loguru==0.7.3
+python-dotenv==1.2.3
+tqdm==4.70.1
+typer==0.27.3
+
+# Notebook de exploración
+ipykernel==7.4.0
+
+# El propio paquete, en modo editable
+-e .
